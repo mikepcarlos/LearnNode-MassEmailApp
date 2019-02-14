@@ -10,7 +10,7 @@ class Header extends Component {
       case false:
         return (
           <li>
-            <a href="http://localhost:5000/auth/google">Login with Google</a>
+            <a href="/auth/google">Login with Google</a>
           </li>
         );
       default:
@@ -23,7 +23,7 @@ class Header extends Component {
       <nav>
         <div className="nav-wrapper">
           <a href="#" className="brand-logo">Emaily</a>
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <ul id="nav-mobile" className="right">
             {this.renderContent()}
           </ul>
         </div>
